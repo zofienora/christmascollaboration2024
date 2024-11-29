@@ -23,3 +23,18 @@ function updateCountdown() {
 }
 
 updateCountdown(); // Start countdown
+
+// music 
+
+ // Create an Audio object
+ const audio = new Audio('music/christmas-jazzy-bells-249610.mp3');
+
+ // Play button functionality
+ document.getElementById('playButton').addEventListener('click', () => {
+     audio.play();
+ });
+
+ // Pause button functionality
+ document.getElementById('pauseButton').addEventListener('click', () => {
+     audio.pause();
+ });
