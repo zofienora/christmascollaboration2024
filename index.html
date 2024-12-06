@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <!--NAVIGATION-->
-   <nav>
-
-   </nav>
-
-
-   <!--MAIN-->
-   <main>
-    <h1>Merry Christmas</h1>
-    <img src="images/christmas-tree.png">
-   </main>
-
-
-   <!--FOOTER-->
-   <footer>
-    <a href="https://www.flaticon.com/free-icons/christmas" title="christmas icons">Christmas icons created by justicon - Flaticon</a>
-
-   </footer>
-
-
-
+    <div id="snow-container"></div>
     <script src="script.js"></script>
+   <!-- ----------MAIN------------------------------------------------------------ -->
+   <main>
+    <h1>Christmas 2024</h1>
+    <div class="grid-parent">
+        <div class="child countdown" id="countdown">
+            <div id="down"></div>
+        </div>
+
+        <div class="child tree">
+            <img src="images/christmas-tree.png">
+        </div>
+        <div class="child music">
+            <button id="playButton">🎶</button>
+            <button id="pauseButton">🔇</button>
+        </div>
+    </div>
+   </main>
+   <!-- Commenting this out instead of removing
+    <script src="script.js"></script>
+    -->
 </body>
 </html>
