@@ -64,7 +64,52 @@ main {
     grid-area: 2 / 4 / 7 / 7; 
     justify-self: end;
     align-self: end;
+    z-index: 2;
 }
+
+/* GREETING */
+
+.greeting {
+    grid-area: 2 / 2 / 6 / 6;
+    justify-self: center;
+    align-self: center;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12rem;
+    z-index: 3;
+    text-align: center;
+  
+     /* Glitter gradient */
+     background: linear-gradient(90deg, #ff0000, #ffd700, #ff0000, #ffffff);
+     background-size: 200% 200%;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     animation: glitter 2s linear infinite;
+ 
+     /* Sparkles */
+     text-shadow: 
+         0 0 5px #fff, 
+         0 0 10px #ff0000, 
+         0 0 15px #ffd700, 
+         0 0 20px #ff0000, 
+         0 0 30px #ffd700;
+     animation: glitter-sparkle 2s linear infinite;
+}
+
+@keyframes glitter {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes glitter-sparkle {
+    0%, 100% { text-shadow: 0 0 5px #fff, 0 0 10px #ff0000, 0 0 15px #ffd700, 0 0 20px #ff0000, 0 0 30px #ffd700; }
+    50% { text-shadow: 0 0 10px #fff, 0 0 20px #ff0000, 0 0 30px #ffd700, 0 0 40px #ff0000, 0 0 50px #ffd700; }
+}
+
+
+
 
 /* MUSIC */
 
